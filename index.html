@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polvo Maneiro</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #FED550;
+    }
+
+    /* para centralizar ítens que são centralizados */
+    .container,
+    .body-monster,
+    .eye {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .body-monster {
+      width: 200px;
+      height: 200px;
+      border-radius: 75% 75% 25% 25%;
+      border-top: 8px solid #6495ED;
+      border-right: 4px solid #191970;
+      background: #0000CD;
+    }
+
+    .eye {
+      width: 100px;
+      height: 100px;
+      border-top: 5px solid #9d9d9d;
+      border-radius: 50px 50px;
+      background: #fff;
+    }
+
+    .eye-2 {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px 50px;
+      border-top: 5px solid #7d7d7d;
+      background: #000;
+    }
+
+    .mouth {
+      margin-top: 10px;
+      width: 60px;
+      height: 5px;
+      border-radius: 50px 50px;
+      background: #000080;
+    }
+
+    .monster-leg {
+      flex-direction: row;
+      display: flex;
+    }
+
+    .leg-1 {
+      width: 30px;
+      height: 102px;
+      background: #0000CD;
+      border-top: 12px solid #191970;
+      border-right: 3px solid #191970;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    .leg-2 {
+      background: #0000CD;
+      border-top: 12px solid #191970;
+      border-right: 3px solid #191970;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      width: 30px;
+      height: 62px;
+
+    }
+  </style>
+  <div class="container">
+    <div class="body-monster">
+      <div class="eye">
+        <div class="eye-2"></div>
+      </div>
+      <div class="mouth"></div>
+    </div>
+    <div class="monster-leg">
+      <div class="leg-2"></div>
+      <div class="leg-1"></div>
+      <div class="leg-1"></div>
+      <div class="leg-2"></div>
+    </div>
+  </div>
+</body>
+
+</html>
